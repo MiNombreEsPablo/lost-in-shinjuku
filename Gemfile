@@ -64,6 +64,8 @@ end
 # custom gems
 
 gem 'bootstrap', '~> 5.3.0'
+gem 'cloudinary', '~> 1.24.0'
+gem "dotenv-rails"
 gem 'jquery-rails'
 
 gem 'sassc-rails'
