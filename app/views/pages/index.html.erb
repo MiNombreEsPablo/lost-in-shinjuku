@@ -7,10 +7,10 @@
       <p><%= @story %></p>
     </div>
     <%# options %>
-    <div class="options">
+    <div class="options" data-controller='option'>
       <div class="list-group" role="group" aria-label="Vertical button group">
         <% @options.each do |key, option| %>
-          <li type="li" class="btn list-group-item list-group-item-action"><%= option %></button>
+          <li type="li" class="btn list-group-item list-group-item-action option" data-action="click->option#select_option" id=<%= key %>><%= option %></button>
         <% end %>
       </div>
     </div>
