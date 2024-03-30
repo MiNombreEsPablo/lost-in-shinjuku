@@ -69,3 +69,4 @@ gem "dotenv-rails"
 gem 'jquery-rails'
 
 gem 'sassc-rails'
+gem 'httparty'
