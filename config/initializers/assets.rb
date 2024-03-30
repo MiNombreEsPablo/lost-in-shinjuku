@@ -14,3 +14,9 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 Rails.application.config.assets.precompile += %w[bootstrap.min.js popper.js]
+
+# Add Yarn node_modules folder to the asset load path
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
+
+# Install JavaScript dependencies if using Yarn
+# system 'bin/yarn install'  # Uncomment if you want Yarn to automatically install dependencies
