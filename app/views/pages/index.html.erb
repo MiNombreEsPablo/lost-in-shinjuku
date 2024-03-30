@@ -2,7 +2,8 @@
 <h1>Lost in Shinjuku</h1>
 
 <%# image %>
-<%= cl_image_tag(@image) %>
+<%= cl_image_tag(@image, width: 400) %>
+
 <%# story %>
 <div class="story-container">
   <p><%= @story %></p>
