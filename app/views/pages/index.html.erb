@@ -1,1 +1,17 @@
+<%# that should probably go in nav bar %>
 <h1>Lost in Shinjuku</h1>
+
+<%# image %>
+<%= cl_image_tag(@image) %>
+<%# story %>
+<div class="story-container">
+  <p><%= @story %></p>
+</div>
+<%# options %>
+<div class="options">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <% @options.each do |key, option| %>
+      <button type="button" class="btn btn-primary"><%= option %></button>
+    <% end %>
+  </div>
+</div>
