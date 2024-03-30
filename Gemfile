@@ -63,9 +63,14 @@ end
 
 # custom gems
 
+gem 'base64'
 gem 'bootstrap', '~> 5.3.0'
 gem 'cloudinary', '~> 1.24.0'
 gem "dotenv-rails"
+gem 'httparty'
 gem 'jquery-rails'
+gem 'multipart-post'
+# gem 'net/http'
 
 gem 'sassc-rails'
+gem 'uri'
