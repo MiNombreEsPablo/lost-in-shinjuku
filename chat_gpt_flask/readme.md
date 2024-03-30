@@ -17,10 +17,11 @@ python3 chat_gpt_api_flask.py
 This load the chatgpt api server that take in json post call and save each iteration to a test.json file 
 
 example api call : start api session 
-'''
+
+```
 curl -X POST -H "Content-type: application/json" -d "{\"message\" : \"start\"}" "loca
 lhost:5000/chat"
-'''
+```
 
 example api call : reply to option message
 ```
