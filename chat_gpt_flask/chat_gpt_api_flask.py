@@ -2,11 +2,15 @@ from openai import OpenAI
 import os 
 from flask import Flask, request, jsonify
 import json
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+os.environ["OPENAI_API_KEY"]=os.getenv('API_KEY')
+
 from utils import random_str,append_message_to_json_file
 os.remove("test.json")
 section_file="test.json" #random_str()+".json"
 
-os.environ["OPENAI_API_KEY"]="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"
 client = OpenAI()
 
 
