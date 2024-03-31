@@ -5,7 +5,16 @@ class OptionController < ApplicationController
         input_text = params[:input_text]
 
         # Call the OpenapiService with the provided input_text and model
-        response = OpenapiService.call(input_text, 'gpt-4-turbo')
+        response = OpenapiService.call(input_text, 'gpt-3.5-turbo')
+
+        render json: response
+    end
+    
+    def stability_call
+        input_text = params[:input_text]
+
+        # Call the StabilityService with the provided input_text and model
+        response = StabilityService.new.call(input_text)
 
         render json: response
     end
