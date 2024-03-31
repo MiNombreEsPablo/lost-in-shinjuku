@@ -4,7 +4,7 @@
 # @param model [String] The model to use for the response [gpt-3.5-turbo, gpt-3.5-turbo-0301]
 # @return [String] The generated response
 # @example
-#   ChatgptService.call('What is your name?', 'gpt-3.5-turbo')
+#   OpenapiService.call('What is your name?', 'gpt-4-turbo')
 #   => "\n\nI am an AI language model created by OpenAI, so I don't have a name. You can call me OpenAI or AI assistant."
 # API Docs: https://platform.openai.com/docs/api-reference/chat/create
 class OpenapiService
@@ -43,7 +43,7 @@ class OpenapiService
   end
 
   class << self
-    def call(message, model = 'gpt-3.5-turbo')
+    def call(message, model = 'gpt-4-turbo')
       new(message, model).call
     end
   end
