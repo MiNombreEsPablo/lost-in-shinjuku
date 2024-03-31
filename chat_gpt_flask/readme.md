@@ -6,10 +6,13 @@ python3 -m venv myprojectenv
 source myprojectenv/bin/activate
 pip install Flask
 pip install openai
+pip install python-dotenv
 ```
 
 
 Run chat_gpt_api_flask.py
+
+First add the chatgpt api key into the .env file
 
 ```
 python3 chat_gpt_api_flask.py
