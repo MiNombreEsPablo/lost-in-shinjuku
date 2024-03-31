@@ -29,7 +29,7 @@ gem 'stimulus-rails'
 gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", ">= 4.0.1"
+gem 'redis', '>= 4.0.1'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -66,7 +66,7 @@ end
 gem 'base64'
 gem 'bootstrap', '~> 5.3.0'
 gem 'cloudinary', '~> 1.24.0'
-gem "dotenv-rails"
+gem 'dotenv-rails'
 gem 'httparty'
 gem 'jquery-rails'
 gem 'multipart-post'

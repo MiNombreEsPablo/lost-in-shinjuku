@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @note: This service is used to call the Stability AI API to generate a response to a message
 # @note: The API key is stored in the credentials file
 # @param message [String] The message to generate a response for
@@ -21,7 +23,7 @@ class StabilityService
         'Authorization' => "Bearer #{api_key}"
       }
     }
-    @api_url = 'https://api.stability.ai/v1/generation/' + model + '/text-to-image' # Replace with Stability AI's generation endpoint
+    @api_url = "https://api.stability.ai/v1/generation/#{model}/text-to-image" # Replace with Stability AI's generation endpoint
     @model = model
     @message = message
   end
@@ -30,7 +32,7 @@ class StabilityService
     body = {
       "text_prompts": [
         {
-          "text": message + ' in anime style.'
+          "text": "#{message} in anime style."
         }
       ],
       "cfg_scale": 7,
