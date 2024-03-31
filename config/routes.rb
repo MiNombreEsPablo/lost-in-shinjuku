@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get 'up' => 'rails/health#show', as: :rails_health_check
 
-  post '/api/openai_call', to 'option#openai_call'
+  post '/api/openai_call', to: 'option#openai_call'
+  post '/api/stability_call', to: 'option#stability_call'
 
+  # FILEPATH: /c:/Users/ninja/Documents/Builders Weekend/lost-in-shinjuku/config/routes.rb
   # Defines the root path route ("/")
   root 'pages#index'
 end
